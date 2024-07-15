@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   build:
@@ -18,17 +18,20 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Cd to react-project
+      - name: Change directory to react-project
         run: cd one-house
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd one-house  # 確保在正確的目錄下
+          npm install
 
       - name: Build React app
-        run: npm run build
+        run: |
+          cd one-house  # 確保在正確的目錄下
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          publish_dir: ./build
-
+          publish_dir: ./one-house/build  # 請根據你的 React 應用的實際建置目錄設置
