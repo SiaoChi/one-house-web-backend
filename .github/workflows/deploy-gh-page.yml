@@ -26,12 +26,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd one-house  # 確保在正確的目錄下
+          cd one-house  
           npm install
 
       - name: Build React app
         run: |
-          cd one-house  # 確保在正確的目錄下
+          cd one-house  
           npm run build
 
       - name: Deploy to GitHub Pages
