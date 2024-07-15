@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   build:
@@ -11,28 +11,25 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
           node-version: "18"
 
-      - name: Change directory to react-project
-        run: cd one-house
-
       - name: Install dependencies
         run: |
-          cd one-house  # 確保在正確的目錄下
+          cd one-house
           npm install
 
       - name: Build React app
         run: |
-          cd one-house  # 確保在正確的目錄下
+          cd one-house
           npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.ACCESS_TOKEN }}
+          ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
           publish_dir: ./one-house/build
