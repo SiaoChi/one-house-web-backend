@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Change directory to react-project
         run: cd one-house
@@ -34,4 +34,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          publish_dir: ./one-house/build  # 請根據你的 React 應用的實際建置目錄設置
+          deploy_key: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./one-house/build
