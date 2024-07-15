@@ -10,7 +10,7 @@ const AppRouter = () => {
   return (
     <Router>
       <div>
-        <MenuBar />
+        <MenuBar basename="/one-house-web-backend"/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ManageProjects />} />
