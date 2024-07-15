@@ -11,25 +11,28 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: "18"
 
+      - name: Change directory to react-project
+        run: cd one-house
+
       - name: Install dependencies
         run: |
-          cd one-house
+          cd one-house  # 確保在正確的目錄下
           npm install
 
       - name: Build React app
         run: |
-          cd one-house
+          cd one-house  # 確保在正確的目錄下
           npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          deploy_key: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./one-house/build
