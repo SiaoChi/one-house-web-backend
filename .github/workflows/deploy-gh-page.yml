@@ -40,4 +40,4 @@ jobs:
           # git pages documents
           # https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-set-ssh-private-key-deploy_key
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./one-house/build
