@@ -38,6 +38,8 @@ const ManageProjects = () => {
   };
 
   const getYoutubeId = (url) => {
+
+  // eslint-disable-next-line
   const regExp = /^.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|shorts\/)([^#\&\?]*).*/;
   const match = url.match(regExp);
   return (match && match[1].length === 11) ? match[1] : null;

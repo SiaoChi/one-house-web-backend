@@ -16,19 +16,24 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
-      - name: Cd to react-project
+      - name: Change directory to react-project
         run: cd one-house
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd one-house  # 確保在正確的目錄下
+          npm install
 
       - name: Build React app
-        run: npm run build
+        run: |
+          cd one-house  # 確保在正確的目錄下
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          publish_dir: ./build
-
+          # https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-set-ssh-private-key-deploy_key
+          personal_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./one-house/build
