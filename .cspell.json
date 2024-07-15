@@ -1,0 +1,10 @@
+{
+    "ignoreWords": [
+        "fastapi",
+        "firestore"
+    ],
+    "words": [
+        "pytz",
+        "uvicorn"
+    ]
+}

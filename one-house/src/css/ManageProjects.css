@@ -1,0 +1,62 @@
+/* src/components/ManageProjects.css */
+.manage-projects {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-item {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-item ul {
+  padding-left: 20px;
+}
+
+.project-item li {
+  margin-bottom: 5px;
+}
+
+.project-item button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.project-item button:hover {
+  background-color: #ff6659;
+}
+
+
+.image-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow-x: auto; /* 若圖片數量多於畫面寬度，允許水平滾動 */
+}
+
+.image-list li {
+  margin-right: 15px; /* 調整圖片間距 */
+}
+
+.image-list img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 2px; /* 可以調整圖片間距 */
+}
+
