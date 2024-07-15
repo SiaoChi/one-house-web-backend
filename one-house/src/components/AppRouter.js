@@ -8,9 +8,9 @@ import CreateProject from './CreateProject';
 
 const AppRouter = () => {
   return (
-    <Router>
+    <Router basename="/one-house-web-backend">
       <div>
-        <MenuBar basename="/one-house-web-backend"/>
+        <MenuBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ManageProjects />} />
