@@ -1,0 +1,41 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.container ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.container li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 2em;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.container p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
+}
