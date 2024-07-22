@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/one-house-web-backend/static/css/main.825fe64f.css",
-    "main.js": "/one-house-web-backend/static/js/main.c2e70b00.js",
+    "main.css": "/one-house-web-backend/static/css/main.ba790423.css",
+    "main.js": "/one-house-web-backend/static/js/main.ddf41476.js",
     "static/js/453.c6ae3a6d.chunk.js": "/one-house-web-backend/static/js/453.c6ae3a6d.chunk.js",
     "index.html": "/one-house-web-backend/index.html",
-    "main.825fe64f.css.map": "/one-house-web-backend/static/css/main.825fe64f.css.map",
-    "main.c2e70b00.js.map": "/one-house-web-backend/static/js/main.c2e70b00.js.map",
+    "main.ba790423.css.map": "/one-house-web-backend/static/css/main.ba790423.css.map",
+    "main.ddf41476.js.map": "/one-house-web-backend/static/js/main.ddf41476.js.map",
     "453.c6ae3a6d.chunk.js.map": "/one-house-web-backend/static/js/453.c6ae3a6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.825fe64f.css",
-    "static/js/main.c2e70b00.js"
+    "static/css/main.ba790423.css",
+    "static/js/main.ddf41476.js"
   ]
 }
